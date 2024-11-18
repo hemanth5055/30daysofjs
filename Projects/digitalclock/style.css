@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 98vh;
+}
+.maincont{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.maincont h3{
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+.clockarea{
+  position: relative;
+  width: 500px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tb{
+  background-color: dodgerblue;
+  font-size: 2.2rem;
+  padding: 25px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.ampm{
+  font-size: 1rem;
+  padding-top: 60px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.maincont h4{
+  font-size: 1rem;
+  margin-top: 80px;
+  font-weight: 500;
+  font-style: italic;
+}
+.maincont h4 a{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width:425px) {
+  body{
+    margin: 5px;
+    min-height:100px;
+  }
+  .maincont{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .maincont h3{
+    font-size: 1.7rem;
+    margin-top: 180px;
+    margin-bottom: 50px;
+  }
+  .clockarea{
+    width: 280px;
+    height: 80px;
+    border-radius: 20px;
+  }
+  .tb{
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  .ampm{
+    padding-top: 40px
+  }
+
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+  .maincont h3{
+    margin-top: 100px;
+  }
+}

@@ -1,10 +1,10 @@
 let data = [
-  //   {
-  //     name: "Digital Clock",
-  //     description:
-  //       "A digital clock that displays the current time with real-time updates.",
-  //     proxyname: "digitalclock",
-  //   },
+    {
+      name: "Digital Clock",
+      description:
+        "A digital clock that displays the current time with real-time updates.",
+      proxyname: "digitalclock",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
