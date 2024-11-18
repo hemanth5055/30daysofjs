@@ -11,7 +11,7 @@ let html = ``;
 data.forEach((element) => {
   html += `<div class="card">
                     <div class="cardimage">
-                    <img src="assets/${element.proxyname}.png" alt="">
+                    <img src="Assets/${element.proxyname}.png" alt="">
                     </div>
                     <div class="cardname">
                         ${element.name}
@@ -20,7 +20,7 @@ data.forEach((element) => {
                     ${element.description}
                     </div>
                     <div class="cardbtn">
-                        <div class="live"><a href="projects/${element.proxyname}/index.html">Live</a></div>
+                        <div class="live"><a href="Projects/${element.proxyname}/index.html">Live</a></div>
                         <div class="githubc"><a href="https://github.com/hemanthrdygit/30daysjs/tree/main/projects/${element.proxyname}">Github</a></div>
                     </div>
                 </div>`;
