@@ -71,6 +71,7 @@ body{
   }
   .maincont{
     width: 100%;
+    border-radius: 0px;
   }
   .maincont h3{
     font-size: 1.7rem;
