@@ -27,7 +27,7 @@ data.forEach((element) => {
                     </div>
                     <div class="cardbtn">
                         <div class="live"><a href="Projects/${element.proxyname}/index.html">Live</a></div>
-                        <div class="githubc"><a href="https://github.com/hemanthrdygit/30daysjs/tree/main/projects/${element.proxyname}">Github</a></div>
+                        <div class="githubc"><a href="https://github.com/hemanth5055/30daysofjs/tree/main/Projects/${element.proxyname}">Github</a></div>
                     </div>
                 </div>`;
 });
