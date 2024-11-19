@@ -212,14 +212,13 @@ body {
     position: relative;
     height: 400px;
     width: 98%;
-    margin-block: 10px;
-    margin: 30px;
+    margin-block: 50px;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(auto-fit, 100px);
     overflow-x: hidden;
   }
   .clear {
-    margin-bottom: 20px;
+    margin: 20px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
