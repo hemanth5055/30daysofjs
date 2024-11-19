@@ -68,6 +68,7 @@ body{
 @media screen and (max-width:425px) {
   body{
     margin: 0px;
+    margin: 0px;
     min-height:100px;
   }
   .maincont{
