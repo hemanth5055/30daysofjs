@@ -5,6 +5,12 @@ let data = [
         "A digital clock that displays the current time with real-time updates.",
       proxyname: "digitalclock",
     },
+    {
+      name: "Modern Number Counter",
+      description:
+        "Increment or decrement numbers with a counter control.",
+      proxyname: "moderncounter",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
