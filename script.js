@@ -1,15 +1,24 @@
 let data = [
     {
+      id:1,
       name: "Digital Clock",
       description:
         "A digital clock that displays the current time with real-time updates.",
       proxyname: "digitalclock",
     },
     {
+      id:2,
       name: "Modern Number Counter",
       description:
         "Increment or decrement numbers with a counter control.",
       proxyname: "moderncounter",
+    },
+    {
+      id:3,
+      name: "Color Picker",
+      description:
+        "Select colors using a color picker and view the color codes.",
+      proxyname: "colorpicker",
     },
 ];
 let cards = document.querySelector(".cards");
