@@ -27,6 +27,13 @@ let data = [
         "Simple todo app to track your day-to-day tasks",
       proxyname: "todo",
     },
+    {
+      id:5,
+      name: "Random Joke ",
+      description:
+        "Generate random jokes using the JokeAPI.",
+      proxyname: "randomjokes",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
