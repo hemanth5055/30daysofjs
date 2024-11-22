@@ -20,6 +20,13 @@ let data = [
         "Select colors using a color picker and view the color codes.",
       proxyname: "colorpicker",
     },
+    {
+      id:4,
+      name: "Todo App",
+      description:
+        "Simple todo app to track your day-to-day tasks",
+      proxyname: "todo",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
