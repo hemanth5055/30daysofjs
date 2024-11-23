@@ -32,7 +32,7 @@ let data = [
       name: "Random Joke ",
       description:
         "Generate random jokes using the JokeAPI.",
-      proxyname: "randomjokes",
+      proxyname: "randomjoke",
     },
 ];
 let cards = document.querySelector(".cards");
