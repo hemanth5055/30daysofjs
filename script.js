@@ -34,6 +34,13 @@ let data = [
         "Generate random jokes using the JokeAPI.",
       proxyname: "randomjoke",
     },
+    {
+      id:6,
+      name: "Random Color Generator",
+      description:
+        "Generate random colors with a single click using this tool.",
+      proxyname: "randomcolorgenerator",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
