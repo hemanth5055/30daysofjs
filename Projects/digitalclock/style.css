@@ -58,8 +58,7 @@ body{
 .maincont h4{
   font-size: 1rem;
   margin-top: 80px;
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 600;
 }
 .maincont h4 a{
   text-decoration: none;
