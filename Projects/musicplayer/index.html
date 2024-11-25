@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/be89691cc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio src="music/radioactive.mp3" class="audio" controls></audio>
+    <div class="maincont">
+      <div class="info">
+        <h3 class="songname"></h3>
+        <h2 class="singername"></h2>
+      </div>
+      <div class="image">
+        <img src="" class="img" alt="" />
+      </div>
+      <div class="songprogress">
+        <input type="range" min="0" max="100" value="0" class="progress" />
+      </div>
+      <div class="options">
+        <div class="back pt">
+          <i class="fa-solid fa-angles-left" style="color: #ffffff"></i>
+        </div>
+        <div class="playpause pt">
+          <i class="fa-solid fa-play" style="color: #ffffff"></i>
+        </div>
+        <div class="next pt">
+          <i class="fa-solid fa-angles-right" style="color: #ffffff"></i>
+        </div>
+      </div>
+      <div class="soundarea">
+          <i class="fa-solid fa-volume-low" style="color: #ffffff;"></i>
+          <input
+          type="range"
+          min="0"
+          max="100"
+          value="100"
+          class="soundprogress"
+          />
+          <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

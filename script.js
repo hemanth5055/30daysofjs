@@ -41,6 +41,13 @@ let data = [
         "Generate random colors with a single click using this tool.",
       proxyname: "randomcolorgenerator",
     },
+    {
+      id:7,
+      name: "Music Player",
+      description:
+        "A simple music player built using HTML, CSS, and JavaScript.",
+      proxyname: "musicplayer",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
