@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #605678;
+}
+.maincont {
+  position: relative;
+  min-width: 500px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  position: relative;
+  font-size: 3rem;
+  margin-inline: auto;
+  color: white;
+}
+.foothead {
+  position: relative;
+  font-size: 1rem;
+}
+.foothead a {
+  text-decoration: none;
+  color: white;
+}
+.clockarea {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  /* background-color: aliceblue; */
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(255, 255, 255);
+}
+.point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.hourhand {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  transition: 0.1s ease transform;
+}
+.hourhand::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  background-color: #FFBF61;
+  border-radius: 5px;
+}
+.minutehand {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  transition: 0.1s linear transform;
+}
+.minutehand::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background-color: #8ABFA3;
+  border-radius: 5px;
+  transition: 0.1s linear transform;
+}
+.secondhand {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.secondhand::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 130px;
+  background-color: #FFE6A5;
+  border-radius: 5px;
+}
+@media screen and (max-width: 425px) {
+  .maincont{
+    min-width: 300px;
+  }
+  .heading{
+    font-size: 2rem;
+  }
+  .clockarea{
+    width: 270px;
+    height: 270px;
+  }
+  .hourhand::before{
+    height: 70px;
+  }
+  .minutehand::before{
+    height: 100px;
+  }
+  .secondhand::before{
+    height: 120px;
+  }
+}

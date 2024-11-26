@@ -48,6 +48,13 @@ let data = [
         "A simple music player built using HTML, CSS, and JavaScript.",
       proxyname: "musicplayer",
     },
+    {
+      id:8,
+      name: "Analog Clock",
+      description:
+        "Displays the current time with a simple clock interface.",
+      proxyname: "analogclock",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
