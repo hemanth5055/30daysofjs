@@ -205,20 +205,21 @@ body {
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 5px;
+  color: black;
 }
 .live {
   border: 1px solid black;
+  color: black;
   padding: 5px 10px;
   border-radius: 5px;
 }
-.live a {
-  color: black;
-}
-.githubc a {
-  color: black;
+.githubc:hover {
+  background-color: black;
+  color: white;
 }
 .live:hover {
-  background-color: rgb(164, 178, 247);
+  background-color: black;
+  color: white;
 }
 
 @media screen and (max-width: 425px) {

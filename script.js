@@ -55,6 +55,13 @@ let data = [
         "Displays the current time with a simple clock interface.",
       proxyname: "analogclock",
     },
+    {
+      id:9,
+      name: "Timer",
+      description:
+        "Set a countdown in minutes for any task or event",
+      proxyname: "timer",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
@@ -70,8 +77,8 @@ data.forEach((element) => {
                     ${element.description}
                     </div>
                     <div class="cardbtn">
-                        <div class="live"><a href="Projects/${element.proxyname}/index.html">Live</a></div>
-                        <div class="githubc"><a href="https://github.com/hemanth5055/30daysofjs/tree/main/Projects/${element.proxyname}">Github</a></div>
+                        <a class="live" href="Projects/${element.proxyname}/index.html">Live</a>
+                        <a class="githubc" href="https://github.com/hemanth5055/30daysofjs/tree/main/Projects/${element.proxyname}">Github</a>
                     </div>
                 </div>`;
 });
