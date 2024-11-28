@@ -62,6 +62,13 @@ let data = [
         "Set a countdown in minutes for any task or event",
       proxyname: "timer",
     },
+    {
+      id:10,
+      name: "Stopwatch",
+      description:
+        "A simple stopwatch with start, stop, and reset functionality.",
+      proxyname: "stopwatch",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
