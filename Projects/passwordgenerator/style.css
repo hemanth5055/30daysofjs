@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  width: 100%;
+  background-color: #536493;
+}
+.heading {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 100px;
+  color: white;
+}
+.notification {
+  position: absolute;
+  background-color: white;
+  display: none;
+  padding: 10px;
+  border-radius: 10px;
+  top: 20px;
+  right: 20px;
+  animation: notify 1s linear;
+}
+@keyframes notify {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.maincont {
+  position: relative;
+  width: 45vw;
+  padding: 30px;
+  margin-block: 50px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+.passwordarea {
+  position: relative;
+  width: 100%;
+  height: 4vw;
+  border-radius: 10px;
+  padding-inline: 30px;
+  background-color: rgb(235, 234, 234);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+.passwordshowarea {
+  position: relative;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  word-break: break-all;
+}
+.copytoclipboard {
+  width: 10%;
+  cursor: pointer;
+  padding: 5px;
+}
+.length {
+  position: relative;
+  width: 100%;
+  height: 4vw;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding-inline: 30px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  background-color: #8aa5ee;
+}
+.options {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.options label {
+  font-size: 1rem;
+}
+.generate {
+  position: relative;
+  font-size: 1rem;
+  padding: 13px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.foothead {
+  position: relative;
+  text-align: center;
+}
+.foothead a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 10px;
+  }
+  .heading {
+    margin-top: 50px;
+    font-size: 6vw;
+  }
+  .passwordarea {
+    height: 15vw;
+  }
+  .length {
+    height: 15vw;
+  }
+  .maincont {
+    width: 100%;
+    margin-block: 30px;
+  }
+  .notification {
+    position: absolute;
+    background-color: white;
+    display: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+  }
+}

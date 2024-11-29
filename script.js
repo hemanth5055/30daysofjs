@@ -69,6 +69,13 @@ let data = [
         "A simple stopwatch with start, stop, and reset functionality.",
       proxyname: "stopwatch",
     },
+    {
+      id:10,
+      name: "Password Generator",
+      description:
+        "Generate strong random passwords for secure use.",
+      proxyname: "passwordgenerator",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
