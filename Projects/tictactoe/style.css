@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  width: 100%;
+  background-color: #1a1a1d;
+  color: white;
+  padding: 2px;
+}
+.notifier {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  color: black;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+.notifier1{
+  position: relative;
+  width: 30vw;
+  height: 5vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 40px;
+  background-color: white;
+
+}
+.notimessage {
+  font-size: 2vw;
+  animation: noti 1s linear;
+}
+@keyframes noti {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+.close {
+  cursor: pointer;
+  font-size: 2vw;
+}
+.close i{
+  color: crimson;
+}
+.heading {
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 70px;
+}
+.turn {
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.tttarea {
+  position: relative;
+  padding: 10px;
+  min-width: 25vw;
+  margin-inline: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 8vw);
+  grid-template-rows: repeat(3, 8vw);
+  justify-content: center;
+  gap: 10px;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: wheat;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.box:hover{
+  background-color: rgb(251, 234, 202);
+}
+.start {
+  position: relative;
+  width: 100px;
+  padding: 5px;
+  margin-inline: auto;
+  border-radius: 5px;
+  background-color: rgb(86, 86, 86);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s linear transform;
+}
+.start:hover{
+  transform: scale(1.1);
+}
+.foothead {
+  text-align: center;
+  margin-top: 60px;
+}
+.foothead a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+@media (max-width: 425px) {
+  .heading {
+    font-size: 8vw;
+  }
+  .notifier {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+  }
+  .notifier1{
+    position: relative;
+    width: 60vw;
+    height: 15vw;
+    border-radius: 10px;
+    padding-inline: 15px;
+  }
+  .notimessage {
+    font-size: 5vw;
+  }
+  .close {
+    font-size: 5vw;
+  }
+  .turn {
+    margin-top: 20px;
+    font-size: 4vw;
+  }
+  .tttarea {
+    margin: 0px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 5px;
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(3, 18vw);
+    gap: 5px;
+  }
+  .start {
+    width: 100px;
+    font-size: 4vw;
+  }
+  .box{
+    font-size: 1rem;
+  }
+  .foothead {
+    margin-top: 60px;
+  }
+  .foothead a {
+    font-size: 4vw;
+  }
+}

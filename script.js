@@ -76,6 +76,13 @@ let data = [
         "Generate strong random passwords for secure use.",
       proxyname: "passwordgenerator",
     },
+    {
+      id:11,
+      name: "Tic Tac Toe",
+      description:
+        "Play the classic Tic Tac Toe game against the computer.",
+      proxyname: "tictactoe",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
