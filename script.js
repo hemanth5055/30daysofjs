@@ -83,6 +83,13 @@ let data = [
         "Play the classic Tic Tac Toe game against the computer.",
       proxyname: "tictactoe",
     },
+    {
+      id:12,
+      name: "Weather App",
+      description:
+        "Get the weather details of any city using the OpenWeatherMap API.",
+      proxyname: "weather",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;

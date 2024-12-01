@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  width: 100%;
+  padding: 2px;
+  background-color: #e6e6e6;
+}
+.mode {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(92, 141, 255);
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+}
+.mode i {
+  animation: rotate 1s linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.heading {
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.searcharea {
+  position: relative;
+  width: 40vw;
+  height: 60px;
+  left: calc(50% - 20vw);
+  margin-top: 80px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  position: relative;
+  width: 35vw;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  font-size: 1.5vw;
+  padding-left: 25px;
+}
+.search::placeholder {
+  font-size: 1vw;
+  font-weight: 600;
+}
+.submit {
+  position: relative;
+  width: 5vw;
+  height: 60px;
+  background-color: rgb(92, 141, 255);
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.detailsarea {
+  position: relative;
+  margin-top: 30px;
+  width: 40vw;
+  height: 25vw;
+  left: calc(50% - 20vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.temparea {
+  position: relative;
+  width: 50%;
+  height: 25vw;
+  border-radius: 30px;
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.cityname {
+  font-size: 1.4vw;
+}
+.smallhead {
+  font-size: 1vw;
+}
+.minor {
+  position: relative;
+  width: 50%;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.humidarea {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
+  flex-direction: column;
+  gap: 10px;
+}
+.pressurearea {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
+  flex-direction: column;
+  gap: 10px;
+}
+.foothead {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 500;
+  font-size: 1.3vw;
+}
+.foothead a {
+  text-decoration: none;
+}
+.darkmodecard {
+  background-color: #1d1d1d;
+  color: white;
+}
+.darkmodeheading {
+  color: white;
+}
+.darkbody {
+  background-color: #121212;
+}
+.darkinput {
+  background-color: #1d1d1d;
+  color: white;
+}
+.darkfoot {
+  color: rgb(255, 255, 255);
+}
+.lightfoot {
+  color: rgb(0, 0, 0);
+}
+h4 {
+  font-weight: 400;
+}
+.tempdata::after {
+  content: "°c";
+  position: relative;
+  font-size: 2vw;
+  font-weight: 400;
+}
+.humiddata::after {
+  content: " %";
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+.pressuredata::after {
+  content: " bar";
+  position: relative;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+@media (max-width: 425px) {
+  .heading {
+    font-size: 9vw;
+    margin-top: 10vh;
+  }
+  .searcharea {
+    width: 90vw;
+    height: 50px;
+    left: calc(50% - 45vw);
+    margin-top: 50px;
+  }
+  .search {
+    width: 75vw;
+    height: 50px;
+    font-size: 5vw;
+  }
+  .search::placeholder {
+    font-size: 4vw;
+  }
+  .submit {
+    width: 20vw;
+    height: 50px;
+    font-size: 5vw;
+  }
+  .detailsarea {
+    width: 90vw;
+    height: 80vw;
+    left: calc(50% - 45vw);
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .temparea {
+    width: 100%;
+    height: 45vw;
+    font-size: 12vw;
+    border-radius: 20px;
+  }
+  .cityname {
+    font-size: 5.4vw;
+  }
+  .smallhead {
+    font-size: 3vw;
+  }
+  .minor {
+    width: 100%;
+    flex-direction: row;
+  }
+  .humidarea {
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    font-size: 6vw;
+  }
+  .pressurearea {
+    border-radius: 20px;
+    font-size: 6vw;
+    width: 50%;
+    height: 100%;
+  }
+  .foothead {
+    margin-top: 50px;
+    font-size: 4vw;
+  }
+  .mode {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 5vw;
+  }
+}
+@media (max-width:768px) and (min-width:426px) {
+  .mode{
+    width: 50px;
+    height: 50px;
+  }
+  .mode i{
+    font-size: 2vw;
+  }
+  .heading{
+    font-size: 3vw;
+  }
+  .searcharea{
+    margin-top: 30px;
+    width: 55vw;
+    height: 50px;
+    left: calc(50% - 27.5vw);
+  }
+  .search{
+    height: 55px;
+    width: 40vw;
+    font-size: 2vw;
+  }
+  .submit{
+    width: 10vw;
+    height: 50px;
+  }
+  .detailsarea{
+    width: 55vw;
+    left: calc(50% - 27.5vw);
+  }
+  .foothead{
+    margin-top: 50px;
+  }
+}
