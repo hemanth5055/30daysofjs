@@ -90,6 +90,13 @@ let data = [
         "Get the weather details of any city using the OpenWeatherMap API.",
       proxyname: "weather",
     },
+    {
+      id:13,
+      name: "Gradient Generator",
+      description:
+        "Create beautiful CSS gradients easily with this gradient generator.",
+      proxyname: "gradientgenerator",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
