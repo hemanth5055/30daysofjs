@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  width: 100%;
+  padding: 2px;
+  background-color: #a6aebf;
+}
+.heading {
+  position: relative;
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 500;
+}
+.accarea {
+  position: relative;
+  width: 65vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 10px;
+}
+.accitem {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.acchead {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: #c5d3e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-inline: 25px;
+}
+.accname {
+  font-weight: 500;
+  width: 85%;
+}
+.btn {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.accdata {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  word-spacing: 0.3vw;
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+}
+.active {
+  display: flex;
+}
+.foothead{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.foothead a{
+  text-decoration: none;
+  color: black;
+}
+@media (max-width:425px) {
+  .heading{
+    font-size: 12vw;
+    margin-top:10vh;
+  }
+  .accarea{
+    margin-top: 50px;
+    width: 90vw;
+  }
+  .acchead{
+    padding-inline: 15px;
+    padding-block: 10px;
+  }
+  .accname{
+    width: 80%;
+    font-size: 4vw;
+  }
+  .accdata{
+    font-size: 4vw;
+    padding: 15px;
+  }
+  .btn{
+    width: 25px;
+    height: 25px;
+  }
+  .foothead{
+    margin-top: 50px;
+  }
+}

@@ -97,6 +97,13 @@ let data = [
         "Create beautiful CSS gradients easily with this gradient generator.",
       proxyname: "gradientgenerator",
     },
+    {
+      id:14,
+      name: "Accordian",
+      description:
+        "Answers to FAQ's using accordian model.",
+      proxyname: "accordian",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
