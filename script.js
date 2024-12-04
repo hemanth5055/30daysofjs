@@ -104,6 +104,13 @@ let data = [
         "Answers to FAQ's using accordian model.",
       proxyname: "accordian",
     },
+    {
+      id:15,
+      name: "Drag & Drop",
+      description:
+        "Drag and drop elements from box to another",
+      proxyname: "draganddrop",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
