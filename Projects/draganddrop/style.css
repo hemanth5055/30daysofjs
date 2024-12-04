@@ -70,6 +70,9 @@ body {
   color: black;
 }
 @media (max-width: 425px) {
+  body{
+    padding-inline: 10px;
+  }
   .heading {
     font-size: 9vw;
     margin-top: 30px;
