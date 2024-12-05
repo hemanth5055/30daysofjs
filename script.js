@@ -111,6 +111,13 @@ let data = [
         "Drag and drop elements from box to another",
       proxyname: "draganddrop",
     },
+    {
+      id:16,
+      name: "Snap Scrolling",
+      description:
+        "Snap scrolling demonstation.",
+      proxyname: "snapscroll",
+    },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
