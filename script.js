@@ -108,7 +108,7 @@ let data = [
   {
     id: 17,
     name: "Mini Calendar",
-    description: "A calendars displaying date,day,month&year.",
+    description: "A mini calendar displaying date,day,month&year.",
     proxyname: "minicalendar",
   },
 ];
