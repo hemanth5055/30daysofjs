@@ -55,7 +55,7 @@ section:nth-child(4) h3 i {
 }
 
 @media (max-width: 425px) {
-  html{
+  html {
     scroll-padding-top: 10px;
   }
   section h3 {

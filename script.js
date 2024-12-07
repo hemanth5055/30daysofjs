@@ -111,6 +111,12 @@ let data = [
     description: "A mini calendar displaying date,day,month&year.",
     proxyname: "minicalendar",
   },
+  {
+    id: 18,
+    name: "Drum Kit",
+    description: "Play different drum sounds using this interactive drum kit.",
+    proxyname: "drumkit",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
