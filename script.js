@@ -117,6 +117,13 @@ let data = [
     description: "Play different drum sounds using this interactive drum kit.",
     proxyname: "drumkit",
   },
+  {
+    id: 19,
+    name: "Lorem Ipsum Generator",
+    description:
+      "Generate random Lorem Ipsum text by selecting number of sentence.",
+    proxyname: "loremgenerator",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
