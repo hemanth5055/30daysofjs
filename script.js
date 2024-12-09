@@ -124,6 +124,13 @@ let data = [
       "Generate random Lorem Ipsum text by selecting number of sentence.",
     proxyname: "loremgenerator",
   },
+  {
+    id: 20,
+    name: "RPS Game",
+    description:
+      "Play the classic Rock, Paper, Scissors game against the computer.",
+    proxyname: "rps",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
