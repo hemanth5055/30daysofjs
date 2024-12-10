@@ -131,6 +131,13 @@ let data = [
       "Play the classic Rock, Paper, Scissors game against the computer.",
     proxyname: "rps",
   },
+  {
+    id: 21,
+    name: "Notes App",
+    description:
+      "Take and manage notes easily with this app.",
+    proxyname: "notesapp",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
