@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", system-ui;
+  color: white;
+}
+body {
+  background-color: black;
+  padding: 5px;
+  padding-top: 20px;
+}
+.maincont {
+  position: relative;
+  width: 99%;
+  height: 95vh;
+  margin-inline: auto;
+  margin-block: auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  padding-top: 100px;
+  background-color: #4b79a7;
+  gap: 70px;
+}
+h3{
+    font-size: 2rem;
+}
+.emojiarea{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emoji{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(6, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s transform ease;
+    font-size: 5rem;
+    filter: grayscale();
+}
+.emoji:hover{
+    transform: scale(1.2);
+    filter: none;
+}
+h4 a{
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (max-width:425px) {
+  h3{
+    text-align: center;
+    font-size: 2rem;
+  }
+  .emoji{
+    height: 150px;
+    width: 150px;
+  }
+  .emoji{
+    font-size: 3rem;
+  }
+  
+}

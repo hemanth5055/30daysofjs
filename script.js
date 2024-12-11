@@ -138,6 +138,13 @@ let data = [
       "Take and manage notes easily with this app.",
     proxyname: "notesapp",
   },
+  {
+    id: 22,
+    name: "Emoji Changer",
+    description:
+      "Change emoji by hovering on it.",
+    proxyname: "emojichanger",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
