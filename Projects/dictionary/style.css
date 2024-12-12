@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  width: 100%;
+  background-color: #605ea1;
+}
+.heading {
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+  font-size: 3vw;
+}
+.inparea {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-inline: auto;
+}
+.word {
+  width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 1.3vw;
+  outline: none;
+  border: none;
+  border-radius: 30px 0px 0px 30px;
+}
+.submit {
+  background-color: #c9c7f3;
+  width: 100px;
+  height: 50px;
+  border-radius: 0px 30px 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.wordarea {
+  margin-inline: auto;
+  position: relative;
+  width: 60%;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  padding-left: 40px;
+  gap: 5px;
+}
+.wordhead {
+  font-size: 2.8vw;
+}
+.wordpho {
+  font-size: 1vw;
+  font-size: 500;
+}
+.popsound {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-block: 5px;
+}
+.sound {
+  font-size: 1vw;
+  cursor: pointer;
+}
+.wordpop {
+  font-size: 1vw;
+  font-size: 500;
+}
+.meaning {
+  margin-top: 20px;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.foothead {
+  margin-top: 50px;
+  text-align: center;
+}
+.foothead a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media (max-width: 425px) {
+  .heading {
+    margin-top: 100px;
+    font-size: 8vw;
+  }
+  .inparea {
+    width: 90%;
+  }
+  .word {
+    width: 75%;
+    font-size: 4vw;
+  }
+  .submit {
+    width: 25%;
+  }
+  .wordarea {
+    width: 90%;
+    padding: 20px;
+    margin-block: 50px;
+  }
+  .wordhead {
+    font-size: 8vw;
+  }
+  .wordpho {
+    font-size: 5vw;
+  }
+  .sound {
+    font-size: 4vw;
+  }
+  .wordpop {
+    font-size: 4vw;
+    font-size: 500;
+  }
+  .meaning{
+    font-size: 4vw;
+  }
+}

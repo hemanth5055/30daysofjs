@@ -145,6 +145,13 @@ let data = [
       "Change emoji by hovering on it.",
     proxyname: "emojichanger",
   },
+  {
+    id: 23,
+    name: "Dictionary",
+    description:
+      "Find meaning of any english word.",
+    proxyname: "dictionary",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
