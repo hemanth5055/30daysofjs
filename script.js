@@ -140,7 +140,7 @@ let data = [
   },
   {
     id: 22,
-    name: "Emoji Changer",
+    name: "Emoji Switcher",
     description:
       "Change emoji by hovering on it.",
     proxyname: "emojichanger",
@@ -151,6 +151,13 @@ let data = [
     description:
       "Find meaning of any english word.",
     proxyname: "dictionary",
+  },
+  {
+    id: 24,
+    name: "Recipe App",
+    description:
+      "Learn the ingredients and method to prepare a recipe.",
+    proxyname: "recipeapp",
   },
 ];
 let cards = document.querySelector(".cards");
