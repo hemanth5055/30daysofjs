@@ -102,7 +102,7 @@ let data = [
   {
     id: 16,
     name: "Snap Scrolling",
-    description: "Snap scrolling demonstation.",
+    description: "Snap scrolling demonstration.",
     proxyname: "snapscroll",
   },
   {
@@ -158,6 +158,13 @@ let data = [
     description:
       "Learn the ingredients and method to prepare a recipe.",
     proxyname: "recipeapp",
+  },
+  {
+    id: 25,
+    name: "Country Details",
+    description:
+      "know the details of a country by it's name.",
+    proxyname: "countrydetails",
   },
 ];
 let cards = document.querySelector(".cards");
