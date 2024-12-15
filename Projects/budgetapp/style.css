@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  color: white;
+}
+:root {
+  --primary-color: #004ea7;
+}
+body {
+  width: 100%;
+  background-color: black;
+}
+.budget-expense {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-inline: auto;
+  margin-top: 30px;
+}
+.budget {
+  width: 50%;
+  height: 100%;
+  background-color: #292929;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 25px;
+}
+.budgetheading {
+  font-size: 2vw;
+
+  font-weight: 500;
+}
+.budgetinp {
+  outline: none;
+  width: 80%;
+  height: 40px;
+  font-size: 1.2vw;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.setbudget {
+  padding: 12px 20px;
+  outline: none;
+  background-color: var(--primary-color);
+  font-size: 1.2vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.expense {
+  width: 50%;
+  height: 100%;
+  background-color: #292929;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 25px;
+}
+.expenseheading {
+  font-size: 2vw;
+  font-weight: 500;
+}
+.producttitle {
+  outline: none;
+  width: 80%;
+  height: 40px;
+  font-size: 1.2vw;
+  padding-left: 10px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.productcost {
+  outline: none;
+  width: 80%;
+  height: 40px;
+  font-size: 1.2vw;
+  padding-left: 10px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.checkamount {
+  padding: 12px 20px;
+  outline: none;
+  background-color: var(--primary-color);
+  font-size: 1.2vw;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.budgetdisplay {
+  width: 70%;
+  height: 100px;
+  border-radius: 20px;
+  margin-inline: auto;
+  background-color: var(--primary-color);
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+}
+.dr {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.dr h3 {
+  font-weight: 600;
+  font-size: 1.3vw;
+}
+.dr h4 {
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+.expenselist {
+  width: 70%;
+  border-radius: 20px;
+  background-color: #292929;
+  margin-inline: auto;
+  margin-top: 10px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+.listheading {
+  font-size: 1.5vw;
+  font-weight: 550;
+  margin-block: 10px;
+}
+.items {
+  width: 100%;
+  margin-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.item3 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.item1 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+.item::before {
+  content: "";
+
+  position: relative;
+  width: 8px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+}
+.item2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.itemname {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+.itemcost {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+.modify {
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+.delete {
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.foothead {
+  text-align: center;
+  font-size: 1vw;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.foothead a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 425px) {
+  .budget-expense {
+    flex-direction: column;
+    width: 90%;
+    height: 600px;
+  }
+  .budget {
+    width: 100%;
+    height: 50%;
+  }
+  .expense {
+    width: 100%;
+    height: 50%;
+    gap: 20px;
+  }
+  .budgetheading {
+    font-size: 8vw;
+  }
+  .budgetinp {
+    font-size: 4vw;
+    width: 90%;
+  }
+  .setbudget {
+    font-size: 4vw;
+  }
+  .expenseheading {
+    font-size: 8vw;
+  }
+  .producttitle {
+    font-size: 4vw;
+    width: 90%;
+  }
+  .productcost {
+    width: 90%;
+    font-size: 4vw;
+  }
+  .checkamount {
+    font-size: 4vw;
+  }
+  .budgetdisplay {
+    width: 90%;
+    padding-inline: 3%;
+  }
+  .dr h4 {
+    font-size: 3.5vw;
+  }
+  .dr h3 {
+    font-size: 4vw;
+  }
+  .expenselist {
+    width: 90%;
+  }
+  .listheading {
+    font-size: 5vw;
+  }
+  .itmes {
+    margin-block: 10px;
+  }
+  .item {
+    padding-left: 5px;
+  }
+  .item1 {
+    padding-left: 10px;
+  }
+  .item::before {
+    width: 5px;
+  }
+  .itemname {
+    font-size: 3.5vw;
+  }
+  .itemcost {
+    font-size: 3.5vw;
+  }
+  .modify {
+    font-size: 3.5vw;
+  }
+  .delete {
+    font-size: 3.5vw;
+  }
+  .foothead {
+    font-size: 3vw;
+  }
+}

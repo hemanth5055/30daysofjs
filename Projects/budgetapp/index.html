@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <script
+      src="https://kit.fontawesome.com/be89691cc6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="budget-expense">
+      <div class="budget">
+        <h3 class="budgetheading">Budget</h3>
+        <input type="number" class="budgetinp" placeholder="Budget Amount in ₹" />
+        <button class="setbudget">Set Budget</button>
+      </div>
+      <div class="expense">
+        <h3 class="expenseheading">Expenses</h3>
+        <input
+          type="text"
+          class="producttitle"
+          placeholder="Enter Title of Product"
+        />
+        <input
+          type="number"
+          class="productcost"
+          placeholder="Enter Cost of Product"
+        />
+        <button class="checkamount">Check Amount</button>
+      </div>
+    </div>
+    <div class="budgetdisplay">
+      <div class="dr">
+        <h3>Total Budget</h3>
+        <h4 class="totalbudgetvalue"></h4>
+      </div>
+      <div class="dr">
+        <h3>Expenses</h3>
+        <h4 class="expensesvalue"></h4>
+      </div>
+      <div class="dr">
+        <h3>Balance</h3>
+        <h4 class="balancevalue"></h4>
+      </div>
+    </div>
+    <div class="expenselist">
+      <h3 class="listheading">Expense List</h3>
+      <div class="items">
+        
+      </div>
+    </div>
+
+    <div class="foothead"><a href="https://github.com/hemanth5055/30daysofjs">#30daysofJavascript</a></div>
+    <script src="script.js"></script>
+  </body>
+</html>

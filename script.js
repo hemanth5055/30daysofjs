@@ -166,6 +166,13 @@ let data = [
       "know the details of a country by it's name.",
     proxyname: "countrydetails",
   },
+  {
+    id: 26,
+    name: "Budget App",
+    description:
+      "Track all your expenses with this app.",
+    proxyname: "budgetapp",
+  },
 ];
 let cards = document.querySelector(".cards");
 let html = ``;
