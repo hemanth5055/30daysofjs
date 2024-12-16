@@ -167,4 +167,10 @@ let data = [
     description: "Track all your expenses with this app.",
     proxyname: "budgetapp",
   },
+  {
+    id: 27,
+    name: "Word Matcher",
+    description: "Find the words in the paragraph and highlight them.",
+    proxyname: "wordmatcher",
+  },
 ];
