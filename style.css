@@ -5,331 +5,304 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
-html {
-  scroll-behavior: smooth;
-}
-a {
-  text-decoration: none;
+:root {
+  --text-color: black;
+  --card-background: #eeeeee;
+  --body-background: white;
+  --button-background: #fbfbfb;
+  --button-background-main: #e3e3e3bc;
 }
 body {
-  margin: 10px;
+  background-color: var(--body-background);
 }
-.maincont {
-  position: relative;
-  width: 100%;
-}
-.headerarea {
-  position: relative;
-  width: 100%;
-  height: 7vh;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 7%;
-  padding-bottom: 10px;
-}
-.jsimage {
-  position: relative;
-  background-color: black;
-  width: 40px;
-  height: 40px;
-}
-.jsimage img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.area1 {
-  position: relative;
+.mode {
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 0px 0px 50%;
+  position: fixed;
+  top: 30px;
+  right: 0;
+  background-color: rgb(212, 134, 243);
+  font-size: 1.5vw;
   display: flex;
   justify-content: center;
+  padding-left: 10px;
   align-items: center;
-  gap: 20px;
-}
-.dayshead {
-  position: relative;
-  font-weight: 500;
-}
-.area2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.btn {
-  position: relative;
-  border-radius: 10px;
-  padding: 10px 20px;
+  z-index: 1;
   cursor: pointer;
 }
-.github {
-  background-color: black;
-}
-.github a {
-  color: white;
-}
-.projects {
-  border: 1px solid black;
-}
-.projects a {
-  color: black;
-}
-
-.descriptionarea {
-  position: relative;
+.cont1 {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-inline: 7%;
+  height: 50vh;
+  padding-top: 30px;
+  padding-left: 50px;
 }
-.descriptionarea h3 {
-  position: relative;
-  font-size: 2rem;
+.cont1 h1 {
   font-weight: 500;
-  margin-block: 40px;
+  font-size: 3vw;
+  margin: 30px 0px;
+  color: var(--text-color);
 }
-.descriptionarea p {
-  position: relative;
-  font-size: 0.9rem;
+.cont1 p {
+  max-width: 40%;
   font-weight: 500;
+  letter-spacing: 1.5;
+  margin-bottom: 30px;
+  color: var(--text-color);
 }
-.area3 {
-  position: relative;
+.btn {
+  width: 100%;
+}
+.bt {
+  padding: 10px 25px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--button-background-main);
+}
+.cont2 {
+  width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  gap: 20px;
+  padding-left: 50px;
 }
-.learn {
-  background-color: black;
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-.learn a {
-  color: white;
-}
-.explore {
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 35px;
-}
-.explore a {
-  color: black;
-}
-.cardsarea {
-  position: relative;
-  width: 100%;
+.js {
+  width: 50%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-inline: 7%;
-  margin-top: 70px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10px;
 }
-.cardsarea h3 {
-  font-size: 2rem;
+.js h1 {
   font-weight: 600;
-  text-decoration: underline;
+  font-size: 20vw;
+  color: var(--text-color);
 }
-.cards {
+.scroll {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 80px;
+}
+.scroll h3 {
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: var(--text-color);
+}
+.scroll i {
+  padding-inline: 10px;
+  color: var(--text-color);
+}
+.cont3 {
   position: relative;
   width: 100%;
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  padding-inline: 30px;
 }
-.card {
+.heading {
+  font-size: 3vw;
+  font-weight: 500;
+  margin-block: 50px;
+  color: var(--text-color);
+}
+.items {
   position: relative;
   width: 100%;
-  height: 400px;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-content: center;
+}
+.item {
+  position: relative;
+  background-color: var(--card-background);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.itemimg {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  transition: 0.5s linear transform;
+}
+.itemimg:hover {
+  transform: scale(1.03);
+}
+.itemimg img {
+  position: relative;
+  width: 100%;
   border-radius: 10px;
+  height: 100%;
+}
+.itemdetails {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-block: 15px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  border: 1px solid black;
+  gap: 18px;
 }
-.cardimage {
-  position: relative;
-  width: 100%;
-  height: 250px;
-  border-radius: 10px 10px 0px 0px;
-  background-color: rgb(248, 248, 248);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cardimage img {
-  position: relative;
-  border-radius: 10px;
-  width: 95%;
-  height: 90%;
-  transition: 0.5s ease transform;
-}
-.cardimage img:hover {
-  transform: scale(1.02);
-}
-.cardname {
-  position: relative;
-  font-size: 1.4rem;
+.headingitem {
+  font-size: 2vw;
   font-weight: 600;
-  padding-inline: 15px;
-  margin-block: 15px;
+  margin-top: 10px;
+  color: var(--text-color);
 }
-.carddesc {
-  position: relative;
-  padding-inline: 15px;
-  font-weight: 500;
-  font-size: 0.8rem;
+.itemdetails p {
+  font-size: 1vw;
+  color: var(--text-color);
 }
-.cardbtn {
+.btns1 {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 10px;
-  margin-block: 15px;
-  padding-inline: 15px;
 }
-.githubc {
-  border: 1px solid black;
+.bt1 {
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--button-background);
+}
+.footerhead {
+  margin-block: 45px;
+  font-size: 1.1vw;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-color);
+}
+span {
+  background-color: var(--card-background);
   padding: 5px 10px;
-  border-radius: 5px;
-  color: black;
+  border-radius: 10px;
 }
-.live {
-  border: 1px solid black;
-  color: black;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-.githubc:hover {
-  background-color: black;
-  color: white;
-}
-.live:hover {
-  background-color: black;
-  color: white;
+@media (max-width: 425px) {
+  .cont1 {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .cont1 h1 {
+    font-size: 8vw;
+  }
+  .cont1 p {
+    font-size: 3vw;
+    max-width: 80%;
+  }
+  .cont2 {
+    padding-left: 0px;
+    flex-direction: column-reverse;
+  }
+  .js {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+  }
+  .js h1 {
+    font-size: 60vw;
+  }
+  .scroll {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .scroll h3 {
+    font-size: 3vw;
+  }
+  .cont3 {
+    padding-inline: 5px;
+  }
+  .items {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .itemimg {
+    height: 200px;
+  }
+  .heading {
+    font-size: 9vw;
+    margin-block: 30px;
+  }
+
+  .itemdetails {
+    padding-left: 5px;
+  }
+  .headingitem {
+    font-size: 7vw;
+  }
+  .itemdetails p {
+    font-size: 3.5vw;
+  }
+  .mode {
+    width: 30px;
+    height: 30px;
+    font-size: 3vw;
+    top: 20px;
+    padding-left: 10px;
+  }
+  .footerhead {
+    font-size: 3.5vw;
+  }
+  span {
+    border-radius: 5px;
+  }
 }
 
-@media screen and (max-width: 425px) {
-  body {
-    margin: 10px;
-    margin-top: 20px;
+@media (min-width: 426px) and (max-width: 780px) {
+  .mode {
+    font-size: 2vw;
   }
-  .headerarea {
-    padding-inline: 2%;
+  .cont1 p {
+    max-width: 60%;
   }
-  .jsimage {
-    width: 40px;
-    height: 38px;
+  .scroll {
+    padding-bottom: 40px;
   }
-  .jsimage img {
-    width: 100%;
-    height: 100%;
+  .cont3 {
+    padding-inline: 15px;
   }
-  .github {
-    display: none;
+  .items {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .projects {
-    display: none;
+  .headingitem {
+    font-size: 2.8vw;
   }
-  .descriptionarea {
-    padding-inline: 2%;
+  .itemdetails p {
+    font-size: 1.5vw;
+    color: var(--text-color);
   }
-  .descriptionarea p {
-    position: relative;
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.1rem;
+  .footerhead {
+    font-size: 1.6vw;
   }
-  .explore {
-    font-weight: 500;
-    font-size: 0.7rem;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 15px;
-  }
-  .learn {
-    background-color: black;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 400;
-  }
-  .cardsarea {
-    padding-inline: 2%;
-    margin-top: 50px;
-  }
-  .cards {
-    position: relative;
-    width: 100%;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  body {
-    margin: 10px;
-    margin-top: 20px;
-  }
-  .headerarea {
-    padding-inline: 4%;
-  }
-  .btn {
-    padding: 8px 15px;
-  }
-  .github {
-    font-size: 0.8rem;
-  }
-  .projects {
-    font-size: 0.8rem;
-  }
-  .descriptionarea {
-    padding-inline: 4%;
-  }
-  .descriptionarea p {
-    position: relative;
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 1.1rem;
-  }
-  .explore {
-    font-weight: 500;
-    font-size: 0.7rem;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 15px;
-  }
-  .learn {
-    background-color: black;
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 400;
-  }
-  .cardsarea {
-    padding-inline: 4%;
-    margin-top: 50px;
-  }
-  .cards {
-    position: relative;
-    width: 100%;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
+  span {
+    border-radius: 5px;
   }
 }
