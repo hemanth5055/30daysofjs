@@ -169,6 +169,7 @@ body {
 }
 .itemdetails p {
   font-size: 1vw;
+  font-weight: 450;
   color: var(--text-color);
 }
 .btns1 {
@@ -238,7 +239,7 @@ span {
     font-size: 3vw;
   }
   .cont3 {
-    padding-inline: 5px;
+    padding-inline: 15px;
   }
   .items {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
