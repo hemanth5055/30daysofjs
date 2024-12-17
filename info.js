@@ -173,4 +173,10 @@ let data = [
     description: "Find the words in the paragraph and highlight them.",
     proxyname: "wordmatcher",
   },
+  {
+    id: 28,
+    name: "Marvel Cards",
+    description: "Get to know about marvel characters.",
+    proxyname: "marvel",
+  },
 ];
