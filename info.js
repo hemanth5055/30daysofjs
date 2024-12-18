@@ -179,4 +179,10 @@ let data = [
     description: "Get to know about marvel characters.",
     proxyname: "marvel",
   },
+  {
+    id: 29,
+    name: "Random Memes",
+    description: "Have a look at the random memes from the reddit.",
+    proxyname: "memes",
+  },
 ];
