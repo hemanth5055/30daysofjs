@@ -191,4 +191,10 @@ let data = [
     description: "Play the classic three numbers game.",
     proxyname: "threenumbers",
   },
+  {
+    id: 32,
+    name: "Calendar",
+    description: "A simple calendar interface to view and manage dates.",
+    proxyname: "calendar",
+  },
 ];
