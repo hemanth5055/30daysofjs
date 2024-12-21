@@ -197,4 +197,10 @@ let data = [
     description: "A simple calendar interface to view and manage dates.",
     proxyname: "calendar",
   },
+  {
+    id: 33,
+    name: "Dice Roll",
+    description: "Roll a virtual dice and get a random number between 1 and 6..",
+    proxyname: "dice",
+  },
 ];
