@@ -200,7 +200,13 @@ let data = [
   {
     id: 33,
     name: "Dice Roll",
-    description: "Roll a virtual dice and get a random number between 1 and 6..",
+    description: "Roll a virtual dice and get a random number between 1 and 6.",
     proxyname: "dice",
+  },
+  {
+    id: 34,
+    name: "News App",
+    description: "Get the latest news around the world.",
+    proxyname: "newsapp",
   },
 ];
