@@ -10,18 +10,19 @@ categories.forEach((cate) => {
 update("business");
 changeactiveness("business");
 function update(jcat) {
-  let url = `https://newsapi.org/v2/top-headlines?country=us&category=${jcat}&apiKey=9b42d4d3602b498987d90652c7f6317a`;
+  let url = `https://api.mediastack.com/v1/news?access_key=73c8f2f781229deaabf2e01346bc90e5&categories=${jcat}`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
       let html = ``;
-      if (data.status == "ok") {
-        data.articles.forEach((art) => {
+      if (data.error == null) {
+        console.log(data);
+        data.data.forEach((art) => {
           if (art.description != null) {
             html += `
               <div class="article">
                 <div class="artimg">
-                  <img src="${art.urlToImage}" alt="Article image">
+                  <img src="imgu.png" alt="Article image">
                 </div>
                 <div class="artdetails">
                   <div class="arttitle">
@@ -36,7 +37,7 @@ function update(jcat) {
                   </div>
                   <div class="artfoot">
                     <a href="${art.url}" class="url">Read It Here</a>
-                    <h4 class="dandt">${art.publishedAt.slice(0, 10)}</h4>
+                    <h4 class="dandt">${art["published_at"].slice(0, 10)}</h4>
                   </div>
                 </div>
               </div>`;
