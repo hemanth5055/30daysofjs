@@ -1,4 +1,6 @@
 let current = document.querySelector(".current");
+let mode = document.querySelector(".mode");
+let root = document.querySelector(":root");
 
 let btn = document.querySelectorAll(".btn");
 btn.forEach((button) => {
@@ -70,6 +72,7 @@ function equalRender() {
 }
 
 function rendercurrent() {
+  console.log(opstack);
   if (opstack.length == 0) {
     current.innerHTML = "0";
   } else {
@@ -78,20 +81,28 @@ function rendercurrent() {
 }
 
 function clearlast() {
-  if (opstack.length === 0) return;
+  if (opstack.length == 0) {
+    opstack = ["0"];
+    return;
+  }
   let lastItem = opstack[opstack.length - 1];
   if (!isNaN(lastItem)) {
     lastItem = lastItem.toString();
-    lastItem = lastItem.slice(0, -1);
-    opstack.pop();
-    if (lastItem.length > 0) {
-      opstack.push(lastItem);
+    if (lastItem.length > 1) {
+      lastItem = lastItem.slice(0, -1);
+      opstack.pop();
+      opstack.push(lastItem); 
+    } else {
+      opstack.pop(); 
+      opstack.push("0");
     }
   } else {
+    // If the last item is an operator, just pop it from the stack
     opstack.pop();
   }
   rendercurrent();
 }
+
 
 function clearall() {
   opstack = [];
@@ -144,3 +155,19 @@ function evaluate() {
   opstack = [String(tempRes)];
   rendercurrent();
 }
+let isLight = false;
+mode.addEventListener("click", () => {
+  if (isLight) {
+    //to dark
+    root.style.setProperty("--text-color", "white");
+    root.style.setProperty("--body-background", "black");
+    root.style.setProperty("--btn-background", "#363636");
+    isLight = false;
+  } else {
+    //to light
+    root.style.setProperty("--text-color", "black");
+    root.style.setProperty("--body-background", "white");
+    root.style.setProperty("--btn-background", "#f5f5f5");
+    isLight = true;
+  }
+});
