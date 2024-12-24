@@ -209,4 +209,10 @@ let data = [
     description: "Get the latest news around the world.",
     proxyname: "newsapp",
   },
+  {
+    id: 35,
+    name: "Calculator",
+    description: "Perfom basic arithmetic operations with this calculator.",
+    proxyname: "calculator",
+  },
 ];
