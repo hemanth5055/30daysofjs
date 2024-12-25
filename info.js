@@ -215,4 +215,10 @@ let data = [
     description: "Perfom basic arithmetic operations with this calculator.",
     proxyname: "calculator",
   },
+  {
+    id: 35,
+    name: "GPA Calculator",
+    description: "under construction.",
+    proxyname: "gpacalculator",
+  },
 ];
