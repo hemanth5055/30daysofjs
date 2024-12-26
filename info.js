@@ -216,9 +216,9 @@ let data = [
     proxyname: "calculator",
   },
   {
-    id: 35,
+    id: 36,
     name: "GPA Calculator",
-    description: "under construction.",
+    description: "Find the GPA for your semester based on grades and credits.",
     proxyname: "gpacalculator",
   },
 ];
