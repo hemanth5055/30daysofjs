@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/be89691cc6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="addfcbg">
+      <div class="addfcbox">
+        <div class="headarea">
+          <h3>Add Flashcard</h3>
+          <div class="close">
+            <i class="fa-solid fa-xmark" style="color: #ffffff"></i>
+          </div>
+        </div>
+        <div class="fcinparea">
+          <label for="Question">Question :</label>
+          <input type="text" id="Question" />
+          <label for="Answer">Answer :</label>
+          <textarea name="Answer" id="Answer"></textarea>
+        </div>
+        <div class="submit">Save</div>
+      </div>
+    </div>
+
+    <div class="maincont">
+      <div class="addarea">
+        <div class="addfcbtn">Add Flashcard</div>
+      </div>
+      <div class="fcdisplayarea"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

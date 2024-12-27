@@ -221,4 +221,10 @@ let data = [
     description: "Find the GPA for your semester based on grades and credits.",
     proxyname: "gpacalculator",
   },
+  {
+    id: 37,
+    name: "Flash Cards",
+    description: "Use these flashcards for active memorization.",
+    proxyname: "flashcard",
+  },
 ];
