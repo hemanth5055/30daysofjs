@@ -4,60 +4,33 @@ let minute = document.querySelector(".minutes");
 let second = document.querySelector(".seconds");
 let start = document.querySelector(".play");
 let reset = document.querySelector(".reset");
-let alert = document.querySelector(".alert");
+let alertSound = document.querySelector(".alert");
+
 let minutes = 5;
 let seconds = 0;
 let timeoutId;
 let isRunning = false;
+
 update();
 
 inc.addEventListener("click", () => {
-  if (isRunning) {
-  } else {
+  if (!isRunning) {
     minutes++;
+    update();
   }
-  update();
 });
+
 dec.addEventListener("click", () => {
-  if (isRunning) {
-  } else {
-    if (minutes == 1) {
-    } else {
-      minutes--;
-    }
+  if (!isRunning && minutes > 1) {
+    minutes--;
+    update();
   }
-  update();
 });
 
 start.addEventListener("click", () => {
   running();
 });
-function update() {
-  minute.innerHTML = addzero(minutes);
-  second.innerHTML = addzero(seconds);
-}
-function addzero(a) {
-  return a < 10 ? "0" + a : a;
-}
-async function running() {
-  if (isRunning) {
-    return;
-  } else {
-    isRunning = true;
-    while (minutes > 0 || seconds > 0) {
-      if (seconds === 0 && minutes > 0) {
-        minutes--;
-        seconds = 59;
-      }
-      update();
-      await delay();
-      seconds--;
-    }
-    update();
-    alert.play();
-    isRunning = false;
-  }
-}
+
 reset.addEventListener("click", () => {
   clearTimeout(timeoutId);
   isRunning = false;
@@ -65,10 +38,44 @@ reset.addEventListener("click", () => {
   seconds = 0;
   update();
 });
+
+function update() {
+  minute.innerHTML = formatTime(minutes);
+  second.innerHTML = formatTime(seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? "0" + time : time;
+}
+
+async function running() {
+  if (isRunning) return;
+  isRunning = true;
+  disableButtons(true);  // Disable buttons while running
+
+  while (minutes > 0 || seconds > 0) {
+    if (seconds === 0 && minutes > 0) {
+      minutes--;
+      seconds = 59;
+    }
+    update();
+    await delay();
+    seconds--;
+  }
+  
+  update();
+  alertSound.play();
+  disableButtons(false); // Re-enable buttons after countdown ends
+}
+
+function disableButtons(disable) {
+  inc.disabled = disable;
+  dec.disabled = disable;
+  start.disabled = disable;
+}
+
 async function delay() {
-  return new Promise((resolve, reject) => {
-    timeoutId = setTimeout(() => {
-      resolve();
-    }, 1000);
+  return new Promise((resolve) => {
+    timeoutId = setTimeout(resolve, 1000);
   });
 }

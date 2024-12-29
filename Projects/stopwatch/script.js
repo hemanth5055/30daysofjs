@@ -80,6 +80,6 @@ async function run() {
       hrs++;
     }
     update();
-    await delay();
+    await delay();  // Wait 1 second before continuing
   }
 }

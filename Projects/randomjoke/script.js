@@ -1,20 +1,28 @@
 let joke = document.querySelector(".joke");
 let randombtn = document.querySelector(".rdmbtn");
 let joketxt = "";
-update();
+const jokeAPIUrl = "https://v2.jokeapi.dev/joke/Any?type=single";
+
+update(); // Initial joke fetch
+
 function update() {
-  fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+  joke.innerHTML = "Loading...";  // Display loading message
+  fetch(jokeAPIUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.joke);
-      joketxt = data.joke;
-      joke.innerHTML = joketxt;
+      if (data.error) {
+        joke.innerHTML = "Sorry, there was an error fetching the joke!";
+      } else {
+        joketxt = data.joke;
+        joke.innerHTML = joketxt;
+      }
     })
     .catch((error) => {
       console.error("Error fetching the joke:", error);
+      joke.innerHTML = "Failed to fetch joke. Please try again.";
     });
 }
 
 randombtn.addEventListener("click", () => {
-  update();
+  update();  // Fetch and display a new joke when the button is clicked
 });
