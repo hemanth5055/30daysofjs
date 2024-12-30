@@ -227,4 +227,10 @@ let data = [
     description: "Use these flashcards for active memorization.",
     proxyname: "flashcard",
   },
+  {
+    id: 38,
+    name: "Favicon Fetcher",
+    description: "Get the logo/favicon by the url.",
+    proxyname: "faviconfetcher",
+  },
 ];
