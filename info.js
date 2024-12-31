@@ -233,4 +233,16 @@ let data = [
     description: "Get the logo/favicon by the url.",
     proxyname: "faviconfetcher",
   },
+  {
+    id: 38,
+    name: "Favicon Fetcher",
+    description: "Get the logo/favicon by the url.",
+    proxyname: "faviconfetcher",
+  },
+  {
+    id: 39,
+    name: "Like/Heart",
+    description: "Get a red heart by tapping the image.",
+    proxyname: "heart",
+  },
 ];

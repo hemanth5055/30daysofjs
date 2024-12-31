@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body {
+  position: relative;
+  width: 100%;
+}
+h4{
+  text-align: center;
+  margin-block: 30px;
+  color: black;
+  font-weight: 500;
+}
+.cont {
+  position: relative;
+  width: 430px;
+  margin-inline: auto;
+  height: 700px;
+  border-radius: 30px;
+  background-image: url(mahe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.hearte {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  transform: rotate(-45deg);
+  animation: ince 1s Linear;
+}
+.hearte::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: red;
+  top: -15px;
+  left: 0;
+}
+.hearte::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: red;
+  left: 15px;
+  top: 0;
+}
+
+@keyframes ince {
+  to {
+    transform: rotate(-45deg) scale(5);
+    opacity: 0;
+  }
+}
+@media (max-width: 425px) {
+  h4{
+    margin-block: 20px;
+  }
+  .cont {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border-radius: 30px;
+  }
+  @keyframes ince {
+    to {
+      transform: rotate(-45deg) scale(3);
+      opacity: 0;
+    }
+  }
+}
