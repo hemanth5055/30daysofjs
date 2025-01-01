@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+.heading {
+  text-align: center;
+  font-size: 2.3vw;
+  margin-block: 40px;
+  font-weight: 500;
+}
+.inparea {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.name {
+  height: 50px;
+  width: 25%;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.3vw;
+  border: 1px solid black;
+  padding-left: 15px;
+}
+.submit {
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2vw;
+}
+.imagesarea {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 65vh;
+}
+.imagesarea h3{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3vw;
+}
+img {
+  border-radius: 15px;
+}
+.foothead {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1vw;
+  margin-block: 20px;
+}
+.foothead a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width:425px) {
+  .heading{
+    font-size: 6vw;
+  }
+  .name{
+    width: 60%;
+    height: 40px;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .submit{
+    padding: 10px 22px;
+    font-size: 4vw;
+  }
+  .imagesarea{
+    padding: 10px;
+  }
+  .imagesarea h3{
+    font-size: 4vw;
+  }
+  img {
+    border-radius: 15px;
+    max-width: 100%;
+  }
+  .foothead {
+    font-size: 4vw;
+  }
+}
