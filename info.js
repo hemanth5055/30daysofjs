@@ -245,4 +245,10 @@ let data = [
     description: "Get the images related to the query.",
     proxyname: "imagesearch",
   },
+  {
+    id: 41,
+    name: "Number facts",
+    description: "Get to know the facts associated with every number.",
+    proxyname: "numberfacts",
+  },
 ];
