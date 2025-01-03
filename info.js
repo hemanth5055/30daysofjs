@@ -251,4 +251,10 @@ let data = [
     description: "Get to know the facts associated with every number.",
     proxyname: "numberfacts",
   },
+  {
+    id: 42,
+    name: "Movie Search",
+    description: "Search for movies and get details using this app.",
+    proxyname: "moviesearch",
+  },
 ];

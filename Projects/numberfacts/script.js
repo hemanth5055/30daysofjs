@@ -27,10 +27,8 @@ async function getFact(value) {
   try {
     // Fetch the fact from the Numbers API
     let resp = await fetch(`http://numbersapi.com/${value}`);
-
     // Convert the response to text
     let fact = await resp.text();
-
     // Display the fetched fact in the fact area
     factarea.innerHTML = `<p>${fact}</p>`;
   } catch (error) {
