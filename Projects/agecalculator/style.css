@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body{
+    background-color: #AA5486;
+}
+.heading {
+  font-size: 3vw;
+  font-weight: 500;
+  text-align: center;
+  margin-block: 150px 50px;
+  color: white;
+}
+.inparea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inps{
+    display: flex;
+    gap: 10px;
+}
+#dayinp{
+    width: 100px;
+    height: 50px;
+    font-size: 1.5vw;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: gainsboro;
+}
+#monthinp{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5vw;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: gainsboro;
+}
+#yearinp{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5vw;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: gainsboro;
+    padding: 5px;
+}
+.submit {
+    padding: 15px 25px;
+    font-size: 1.2vw;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.detailsarea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-block: 50px;
+    flex-wrap: wrap;
+}
+.item{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: white;
+    background-color: #b17397;
+    border-radius: 10px;
+}
+.year:after{
+    content: 'Years';
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 600;
+    bottom: 10px;
+    color: rgb(222, 222, 222);
+}
+.months:after{
+    content: 'Months';
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 600;
+    bottom: 10px;
+    color: rgb(222, 222, 222);
+}
+.days:after{
+    content: 'Days';
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 600;
+    bottom: 10px;
+    color: rgb(222, 222, 222);
+}
+@media (max-width:425px) {
+    .heading{
+        font-size: 9vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .inparea{
+        flex-direction: column;
+    }
+    .inps{
+        position: relative;
+        flex-direction: column;
+    }
+    #dayinp{
+        width: 100%;
+        height: 50px;
+        font-size: 5vw;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+    #yearinp{
+        width: 100%;
+        height: 50px;
+        font-size: 5vw;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+    #monthinp{
+        width: 100%;
+        height: 50px;
+        font-size: 5vw;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+    }
+    .submit{
+        font-size: 4vw;
+        padding: 8px 16px;
+    }
+    .detailsarea{
+        gap: 30px;
+    }
+    .item{
+        font-size: 10vw;
+        font-weight: 600;
+    }
+    .item:after{
+        font-size: 4vw;
+    }
+}

@@ -257,4 +257,10 @@ let data = [
     description: "Search for movies and get details using this app.",
     proxyname: "moviesearch",
   },
+  {
+    id: 43,
+    name: "Age Calculator",
+    description: "Calculate your age based on your birthdate with this simple app.",
+    proxyname: "agecalculator",
+  },
 ];

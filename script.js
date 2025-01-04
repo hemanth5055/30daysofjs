@@ -17,7 +17,7 @@ mode.addEventListener("click", () => {
     mode.innerHTML = `<i class="fa-solid fa-moon" style="color: #ffffff;"></i>`;
   } else {
     //turn to dark mode
-    root.style.setProperty("--text-color", "white");
+    root.style.setProperty("--text-color", "#dddddd");
     root.style.setProperty("--card-background", "#2a2a2a");
     root.style.setProperty("--body-background", "black");
     root.style.setProperty("--button-background", "#545454");
