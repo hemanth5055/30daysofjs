@@ -260,7 +260,14 @@ let data = [
   {
     id: 43,
     name: "Age Calculator",
-    description: "Calculate your age based on your birthdate with this simple app.",
+    description:
+      "Calculate your age based on your birthdate with this simple app.",
     proxyname: "agecalculator",
+  },
+  {
+    id: 44,
+    name: "Hangman Game",
+    description: "Guess the hidden word in this classic Hangman game.",
+    proxyname: "hangmangame",
   },
 ];

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <script
+      src="https://kit.fontawesome.com/be89691cc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popupbg">
+      <div class="popup">
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        <h3></h3>
+      </div>
+    </div>
+    <div class="main">
+      <div class="imgarea">
+        <img src="images/hang0.svg" alt="hangman image" class="hangimg" />
+      </div>
+      <div class="detailsarea">
+        <div class="wordarea"></div>
+        <div class="hintarea"></div>
+        <div class="guessarea"><span></span></div>
+        <div class="keypadarea"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
