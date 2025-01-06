@@ -270,4 +270,10 @@ let data = [
     description: "Guess the hidden word in this classic Hangman game.",
     proxyname: "hangmangame",
   },
+  {
+    id: 45,
+    name: "Captcha Generator",
+    description: "Generate CAPTCHA codes to prevent automation.",
+    proxyname: "captcha",
+  },
 ];
