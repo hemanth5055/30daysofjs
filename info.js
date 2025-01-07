@@ -276,4 +276,10 @@ let data = [
     description: "Generate CAPTCHA codes to prevent automation.",
     proxyname: "captcha",
   },
+  {
+    id: 46,
+    name: "Expanding Cards",
+    description: "Tap on the card to view its content.",
+    proxyname: "expandcards",
+  },
 ];

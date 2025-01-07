@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --city: "Hyderabad";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body{
+  width: 100%;
+}
+.maincont {
+  position: relative;
+  width: 95%;
+  height: 700px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-inline: 20px;
+}
+.item {
+  position: relative;
+  height: 90%;
+  width: 10%;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.7s linear;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.active {
+  width: 95%;
+}
+.itemimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.active::after {
+  content: var(--city);
+  position: relative;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: 400;
+  bottom: 20px;
+  left: 20px;
+}
+.foothead {
+  text-align: center;
+  margin-block: 40px 10px;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+.foothead a{
+  color: black;
+  text-decoration: none;
+}
+@media (max-widtH:425px) {
+  .foothead{
+    font-size: 3.5vw;
+    margin-block: 30px;
+  }
+  .maincont{
+    width: 98%;
+    height: 600px;
+    gap: 15px;
+  }
+  .item{
+    width: 5%;
+  }
+  .active{
+    width: 100%;
+  }
+  .active::after{
+    font-size: 4vw;
+  }
+}
