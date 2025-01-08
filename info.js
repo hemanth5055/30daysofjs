@@ -282,4 +282,10 @@ let data = [
     description: "Tap on the card to view its content.",
     proxyname: "expandcards",
   },
+  {
+    id: 47,
+    name: "Grid Glow",
+    description: "Highlighting the glowing effect on grid items.",
+    proxyname: "gridglow",
+  },
 ];
