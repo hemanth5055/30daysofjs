@@ -288,4 +288,10 @@ let data = [
     description: "Highlighting the glowing effect on grid items.",
     proxyname: "gridglow",
   },
+  {
+    id: 48,
+    name: "Weight Converter",
+    description: "Convert weights into different units.",
+    proxyname: "weightconverter",
+  },
 ];
