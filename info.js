@@ -294,4 +294,10 @@ let data = [
     description: "Convert weights into different units.",
     proxyname: "weightconverter",
   },
+  {
+    id: 49,
+    name: "Movie Quote Generator",
+    description: "Generate random quotes from movies and TV series.",
+    proxyname: "moviequotegenerator",
+  },
 ];
