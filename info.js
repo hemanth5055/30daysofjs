@@ -300,4 +300,10 @@ let data = [
     description: "Generate random quotes from movies and TV series.",
     proxyname: "moviequotegenerator",
   },
+  {
+    id: 50,
+    name: "Progress Bar",
+    description: "Dynamic progress bar which moves forward and backward.",
+    proxyname: "progressbar",
+  },
 ];
