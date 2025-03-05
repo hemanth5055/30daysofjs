@@ -77,9 +77,9 @@ function update(city) {
         // Update the UI with the weather data
         temparea.innerHTML = `<h4 class="tempdata">${kelvintocelc(
           data.main.temp
-        )}°C</h4><h4 class="cityname">${name} ${isIndia ? "🇮🇳" : `, ${country}`}</h4>`;
-        humidarea.innerHTML = `<h4 class="humiddata">${data.main.humidity}%</h4><h4 class="smallhead">Humidity</h4>`;
-        pressurearea.innerHTML = `<h4 class="pressuredata">${data.main.pressure} hPa</h4><h4 class="smallhead">Pressure</h4>`;
+        )}</h4><h4 class="cityname">${name} ${isIndia ? "🇮🇳" : `, ${country}`}</h4>`;
+        humidarea.innerHTML = `<h4 class="humiddata">${data.main.humidity}</h4><h4 class="smallhead">Humidity</h4>`;
+        pressurearea.innerHTML = `<h4 class="pressuredata">${data.main.pressure} </h4><h4 class="smallhead">Pressure</h4>`;
       } else {
         displayError();  // If the API response indicates an error, show an error message
       }
